@@ -1,0 +1,65 @@
+.doctor-availability {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+.add-time-slot {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: end;
+}
+
+.add-time-slot select,
+.add-time-slot input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-time-slot button {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-time-slot button:hover {
+  background: #218838;
+}
+
+.time-slots-list {
+  margin-top: 20px;
+}
+
+.time-slot {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  gap: 15px;
+}
+
+.time-slot span {
+  flex: 1;
+}
+
+.time-slot button {
+  padding: 6px 12px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time-slot button:hover {
+  background: #c82333;
+} 

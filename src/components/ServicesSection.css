@@ -1,0 +1,106 @@
+.sxrx-services-section {
+  background: #fafbfc;
+  padding: 56px 0 48px 0;
+  text-align: center;
+}
+.sxrx-services-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #181c32;
+  margin-bottom: 8px;
+}
+.sxrx-services-subtitle {
+  color: #5a6273;
+  font-size: 1.13rem;
+  margin-bottom: 38px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sxrx-services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.sxrx-service-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.06);
+  min-width: 340px;
+  max-width: 370px;
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.sxrx-service-card:hover {
+  box-shadow: 0 4px 24px 0 rgba(30, 75, 119, 0.13);
+}
+.sxrx-service-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #eaf6fd;
+}
+.sxrx-service-content {
+  padding: 24px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sxrx-service-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #181c32;
+  margin-bottom: 8px;
+  text-align: left;
+}
+.sxrx-service-desc {
+  color: #5a6273;
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.sxrx-service-btn {
+  background: #4094f7;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1.08rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sxrx-service-btn:hover {
+  background: #2563eb;
+}
+.sxrx-service-card-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.sxrx-service-note {
+  color: #f59e42;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+@media (max-width: 1100px) {
+  .sxrx-services-cards {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  .sxrx-service-card {
+    min-width: 260px;
+    max-width: 98vw;
+  }
+} 

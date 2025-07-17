@@ -1,0 +1,129 @@
+.sxrx-why-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 64px 0 56px 0;
+  background: #fff;
+}
+.sxrx-why-left {
+  flex: 1 1 520px;
+  max-width: 600px;
+}
+.sxrx-why-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #181c32;
+  margin-bottom: 32px;
+}
+.sxrx-why-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sxrx-why-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+.sxrx-why-feature-icon {
+  background: #eaf6fd;
+  color: #4094f7;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2px;
+}
+.sxrx-why-feature-title {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #181c32;
+  margin-bottom: 4px;
+}
+.sxrx-why-feature-desc {
+  color: #5a6273;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+.sxrx-why-right {
+  flex: 1 1 420px;
+  max-width: 520px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.sxrx-why-testimonials-box {
+  background-color: #6ce5ee;
+  border-radius: 14px;
+  padding: 32px 32px 24px 32px;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.sxrx-why-testimonials-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #181c32;
+  margin-bottom: 18px;
+}
+.sxrx-why-testimonial {
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px 18px 12px 18px;
+  margin-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.sxrx-why-stars {
+  color: #f7b500;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+.sxrx-why-testimonial-name {
+  font-weight: 700;
+  color: #222;
+  margin-left: 6px;
+}
+.sxrx-why-testimonial-text {
+  color: #222;
+  font-size: 1rem;
+  margin-top: 4px;
+  text-align: left;
+}
+.sxrx-why-testimonials-link {
+  color: #4094f7;
+  font-size: 1rem;
+  margin-top: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+}
+.sxrx-why-testimonials-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .sxrx-why-section {
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px 0 32px 0;
+    align-items: stretch;
+  }
+  .sxrx-why-right {
+    justify-content: center;
+    width: 100%;
+    max-width: 100vw;
+  }
+  .sxrx-why-testimonials-box {
+    background-color: #6ce5ee;
+    max-width: 100vw;
+    padding: 24px 8px 16px 8px;
+  }
+} 

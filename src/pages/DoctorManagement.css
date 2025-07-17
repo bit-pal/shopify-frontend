@@ -1,0 +1,101 @@
+.doctor-management {
+  min-height: 60vh;
+  background: #f8f9fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0 10px 0;
+}
+
+.doctor-form {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.doctor-form input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.doctor-form button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.doctor-form button:hover {
+  background: #0056b3;
+}
+
+.doctors-list {
+  background: white;
+  border-radius: 8px;
+  min-width: 1024px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.doctors-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.doctors-list th,
+.doctors-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.doctors-list th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.doctors-list button {
+  padding: 6px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.doctors-list button:first-child {
+  background: #28a745;
+  color: white;
+}
+
+.doctors-list button:last-child {
+  background: #dc3545;
+  color: white;
+}
+
+.doctors-list button:hover {
+  opacity: 0.9;
+}
+
+.doctor-form-fields {
+  flex: 1 1 80%;
+  display: flex;
+  gap: 15px;
+}
+
+.doctor-form-actions {
+  flex: 0 0 auto;
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+} 

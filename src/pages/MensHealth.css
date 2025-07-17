@@ -1,0 +1,219 @@
+.sxrx-mens-health-page {
+  min-height: 60vh;
+  background: #f8f9fb;
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 0 32px 0;
+}
+.sxrx-mens-health-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px 0 rgba(44, 62, 80, 0.08);
+  padding: 48px 40px 36px 40px;
+  max-width: 1200px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.sxrx-mens-health-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #181c32;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Reuse all .sxrx-wh-* styles from WomensHealth.css for consistency */
+.sxrx-wh-step-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #4094f7;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.sxrx-wh-doctor-info {
+  background: #f8f9fb;
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+  color: #222;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #222;
+  font-size: 1.05rem;
+  margin-bottom: 2px;
+}
+input, select, textarea {
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid #dbeafe;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8f9fb;
+  color: #222;
+  outline: none;
+  transition: border 0.2s;
+}
+input:focus, select:focus, textarea:focus {
+  border: 1.5px solid #4094f7;
+  background: #fff;
+}
+.sxrx-wh-nav-btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 18px;
+}
+.sxrx-wh-btn, .sxrx-wh-nav-btns button {
+  background: #4094f7;
+  align-self: center;
+  max-width: 400px;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sxrx-wh-btn:hover, .sxrx-wh-nav-btns button:hover {
+  background: #2563eb;
+}
+.sxrx-wh-nav-btns button[type="button"] {
+  background: #eaf6fd;
+  color: #4094f7;
+  border: 1px solid #b6d6f7;
+}
+.sxrx-wh-nav-btns button[type="button"]:hover {
+  background: #dbeafe;
+}
+.sxrx-wh-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.sxrx-wh-progress-step {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #eaf6fd;
+  color: #4094f7;
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+.sxrx-wh-progress-step.active {
+  background: #4094f7;
+  color: #fff;
+}
+.sxrx-wh-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  margin: 18px 0 8px 0;
+  width: 100%;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sxrx-wh-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.08rem;
+  font-weight: 500;
+  gap: 12px;
+  width: 100%;
+  justify-content: space-between;
+}
+.sxrx-wh-checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #4094f7;
+  margin-left: 0;
+  margin-right: 0;
+}
+.sxrx-wh-checkbox label {
+  margin-bottom: 0;
+}
+.sxrx-wh-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 18px 0 18px 0;
+  align-items: stretch;
+}
+.sxrx-wh-radio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.08rem;
+  font-weight: 400;
+  gap: 16px;
+  cursor: pointer;
+  margin: 0;
+  padding: 6px 0;
+}
+.sxrx-wh-radio input[type="radio"] {
+  margin: 0;
+  accent-color: #4094f7;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.sxrx-wh-signature-block {
+  margin: 18px 0 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.sxrx-wh-signature-canvas {
+  border: 1.5px solid #dbeafe;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  background: #fff;
+}
+.sxrx-wh-btn-clear {
+  background: #eaf6fd;
+  color: #4094f7;
+  border: 1px solid #b6d6f7;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background 0.2s;
+}
+.sxrx-wh-btn-clear:hover {
+  background: #dbeafe;
+}
+@media (max-width: 600px) {
+  .sxrx-mens-health-container {
+    padding: 24px 6vw 18px 6vw;
+    max-width: 98vw;
+  }
+} 

@@ -1,0 +1,84 @@
+.doctor-calendar-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-calendar-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.calendar-wrapper {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* FullCalendar Customization */
+.fc {
+  font-family: inherit;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5em !important;
+  color: #333;
+}
+
+.fc-button-primary {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+}
+
+.fc-button-primary:hover {
+  background-color: #45a049 !important;
+  border-color: #45a049 !important;
+}
+
+.fc-event {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
+
+.fc-timegrid-slot {
+  height: 60px !important;
+}
+
+.fc-timegrid-slot-label {
+  font-size: 0.9em;
+}
+
+.fc-day-today {
+  background-color: #f8f9fa !important;
+}
+
+.fc-event-title {
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .doctor-calendar-container {
+    padding: 10px;
+  }
+
+  .calendar-wrapper {
+    padding: 10px;
+  }
+
+  .fc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .fc-toolbar-chunk {
+    display: flex;
+    justify-content: center;
+  }
+} 

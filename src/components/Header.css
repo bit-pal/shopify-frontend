@@ -1,0 +1,96 @@
+.sxrx-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px 18px 32px;
+  background: #fff;
+  box-shadow: 0 1px 0 #f0f4f8;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.sxrx-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.sxrx-logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 36px;
+  text-decoration: none;
+}
+.sxrx-logo-blue {
+  color: #4094f7;
+}
+
+.sxrx-nav {
+  display: flex;
+  gap: 28px;
+}
+.sxrx-nav-link {
+  color: #222;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sxrx-nav-link:hover {
+  color: #4094f7;
+}
+.sxrx-nav-link-disabled {
+  color: #bfc6d1;
+  cursor: not-allowed;
+}
+
+.sxrx-header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.sxrx-state {
+  background: #eaf6fd;
+  color: #4094f7;
+  border-radius: 8px;
+  padding: 4px 16px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.sxrx-icon {
+  font-size: 1.3rem;
+  color: #222;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: color 0.2s;
+}
+.sxrx-icon:hover {
+  color: #4094f7;
+}
+.sxrx-account {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.sxrx-account-arrow {
+  font-size: 0.8rem;
+  margin-left: 4px;
+}
+
+.sxrx-video-btn {
+  background: #4094f7;
+  color: #fff !important;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-weight: 600;
+  margin-left: 18px;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(64, 148, 247, 0.08);
+}
+.sxrx-video-btn:hover {
+  background: #2566b3;
+  color: #fff !important;
+  text-decoration: none;
+} 
