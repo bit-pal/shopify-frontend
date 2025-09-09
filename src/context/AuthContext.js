@@ -112,6 +112,9 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('token', token);
       localStorage.setItem('refreshToken', refreshToken);
       localStorage.setItem('user', JSON.stringify(user));
+      console.log(user)
+      const response1 = await axios.post(`${BASE_URL}/tebraUser/signup/${user.id}`);
+      console.log(response1);
       setUser(user);
       return user;
     } catch (err) {
@@ -183,6 +186,50 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const fetchUsersWithTebraData = async () => {
+    try {
+      const token = localStorage.getItem('token');
+      
+      // Get users from your backend
+      const response = await axios.get(`${BASE_URL}/users`, {
+        headers: { Authorization: `Bearer ${token}` }
+      });
+      
+      const users = response.data;
+      
+      // If mock flag is enabled, add Tebra data
+      if (process.env.REACT_APP_USE_TEBRA_MOCK === 'true') {
+        const usersWithTebra = await Promise.all(
+          users.map(async (user) => {
+            try {
+              // Get Tebra data for each user
+              const tebraResponse = await axios.get(`${BASE_URL}/tebra/users/${user._id}`, {
+                headers: { Authorization: `Bearer ${token}` }
+              });
+              
+              return {
+                ...user,
+                tebraData: tebraResponse.data.tebraData
+              };
+            } catch (error) {
+              // If user doesn't have Tebra data, just return user
+              return {
+                ...user,
+                tebraData: null
+              };
+            }
+          })
+        );
+        
+        return usersWithTebra;
+      }
+      
+      return users;
+    } catch (err) {
+      setError(err.response?.data?.message || 'Failed to fetch users');
+      throw err;
+    }
+  };
   return (
     <AuthContext.Provider value={{
       user,
@@ -195,7 +242,8 @@ export const AuthProvider = ({ children }) => {
       fetchUsers,
       updateUser,
       deleteUser,
-      resetUserPassword
+      resetUserPassword,
+      fetchUsersWithTebraData,
     }}>
       {children}
     </AuthContext.Provider>
